@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+
+    <title>JS E-Commerce</title>
+  </head>
+
+  <body>
+    <!-- NavBar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">JS E-Commerce</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="lista-vacia"></div>
+
+    <!-- Cards -->
+
+    <div class="container">
+      <h2>Catálogo de Productos</h2>
+    </div>
+
+    <div class="container-cards d-flex ">
+      <div class="card border-dark mb-3 mr-3" style="max-width: 20rem">
+        <div class="card-header">Producto A</div>
+        <div class="card-body">
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ipsam
+            rerum eveniet adipisci atque explicabo obcaecati nulla incidunt enim
+            veniam..
+          </p>
+          <button type="button" class="btn btn-dark" id="btnInfo">
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <hr />
+
+    <!-- Cart -->
+
+    <div class="container">
+      <h2>Tu Carrito</h2>
+      <em>Tus productos seleccionados...</em>.
+
+      <div class="container-cart">
+        <h4 class="card-title">Producto C</h4>
+        <p class="card-text">Precio:</p>
+        <button type="button" class="btn btn-outline-primary" id="btn-eliminar">
+          Eliminar
+        </button>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Form -->
+
+    <form class="container" id="formulario">
+      <h3>Formulario de Contacto</h3>
+      <label>Nombre y Apellido</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputName"
+        placeholder="Ingrese su Nombre y Apellido"
+      />
+      <label>Correo Electrónico</label>
+      <input
+        type="email"
+        class="form-control"
+        id="inputEmail"
+        placeholder="Ingrese su E-mail"
+      />
+      <div class="container-form">
+        <button type="submit" class="btn btn-secondary">
+          Comprar y Enviar Información
+        </button>
+      </div>
+    </form>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
